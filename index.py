@@ -25,3 +25,16 @@ print(b)
 # ggg: str = "sdas"
 # ggg = ("ssad","adsa")
 # print(ggg)
+
+obj = {
+    'a': 'aaa',
+    'b': 'bbb',
+    'c': 'ccc'
+}
+print(obj['c'])
+print(obj.get('d', 'not exists'))
+
+oo = 'Aaa'
+print(oo.lower())
+print(oo)
+

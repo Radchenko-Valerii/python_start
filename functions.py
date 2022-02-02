@@ -15,5 +15,6 @@ def loto_ticket():
         return (wining_func())
     else:
         return (loosing_func())
+#     я знаю что это дичь и что тут разные вероятности в зависимости от числа 10 - 0%, 1 - 100%
 
 loto_ticket()
