@@ -10,11 +10,14 @@ def power(a: int, b: int):
     return a**b
 
 def loto_ticket():
-    ticket = float(input("Enter the number from 1 to 10: "))
-    if ((datetime.today() - datetime(1970,1,1)).seconds)%ticket == 0:
-        return (wining_func())
-    else:
-        return (loosing_func())
+    try:
+        ticket = float(input("Enter the number from 1 to 10: "))
+        if ((datetime.today() - datetime(1970,1,1)).seconds)%ticket == 0:
+            return (wining_func())
+        else:
+            return (loosing_func())
+    except ValueError as err:
+            print(err)
 #     я знаю что это дичь и что тут разные вероятности в зависимости от числа 10 - 0%, 1 - 100%
 
 loto_ticket()
