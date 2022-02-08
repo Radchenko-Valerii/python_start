@@ -9,9 +9,9 @@
 #     else:
 #         print(y)
 #
-
-
-
+#
+#
+#
 # def reverseFive(words):
 #     resc = words.split()
 #     result = []
@@ -23,7 +23,7 @@
 #     return(' '.join(result))
 #
 # reverseFive('asdim')
-
+#
 def max(num):
     res = []
     for n in str(num):
@@ -36,3 +36,11 @@ def max(num):
 print(max(123))
 
 
+def max_min(str):
+    result = []
+    for num in str.split(' '):
+        result.append(num)
+    result.sort(reverse=True)
+    return ''.join(result[0]) + ' ' + ''.join(result[len(result)-1])
+
+print(max_min("-21 2 3 4 5111 5111"))
